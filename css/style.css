@@ -30,21 +30,11 @@ a {
 
 .hero {
     position: relative;
-    background: radial-gradient(circle at top left, #2b2620, #0c0a09 55%);
+    background: #181818;
     color: #fdfbf7;
     text-align: center;
     padding: 96px 20px 88px;
     overflow: hidden;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        radial-gradient(circle at top right, rgba(198, 164, 106, 0.18), transparent 55%),
-        radial-gradient(circle at bottom, rgba(255, 255, 255, 0.04), transparent 60%);
-    pointer-events: none;
 }
 
 .hero-inner {
@@ -54,10 +44,10 @@ a {
 }
 
 .logo {
-    width: 120px;
-    margin: 0 auto 20px;
-    border-radius: 999px;
-    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+    width: 90px;
+    margin: 0 auto 10px;
+    border-radius: 0px;
+    /* box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45); */
     transform: translateY(0);
     transition: transform 0.6s ease, box-shadow 0.6s ease, opacity 0.6s ease;
 }
@@ -73,7 +63,7 @@ a {
     letter-spacing: 0.18em;
     text-transform: uppercase;
     font-weight: 500;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 }
 
 .hero h1::after {
@@ -91,6 +81,15 @@ a {
     margin: 0 auto 36px;
     font-size: 18px;
     color: #f3ede3;
+}
+.subtitle-hero {
+    max-width: 620px;
+    margin: 0 auto 36px;
+    font-size: 10px;
+    color: #f3ede3;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 
